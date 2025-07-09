@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+package br.com.poo.entidedes;
 
-public enum TipoPessoa {
+public enum TipoPessoa  {
+    FISICA,
+    JURIDICA;
+
+    public boolean equals() {
+    }
 }

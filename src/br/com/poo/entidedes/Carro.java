@@ -1,3 +1,5 @@
+package br.com.poo.entidedes;
+
 public class Carro {
     String modelo;
     String cor;
