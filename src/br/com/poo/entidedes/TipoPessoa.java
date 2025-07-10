@@ -4,6 +4,5 @@ public enum TipoPessoa  {
     FISICA,
     JURIDICA;
 
-    public boolean equals() {
-    }
+
 }

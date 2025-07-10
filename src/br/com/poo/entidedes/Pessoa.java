@@ -11,18 +11,17 @@ public class Pessoa {
     public  LocalDate dataNascimento;
     public  String[] telefones = new String[10];
 
-    public void trocarTipoPessoa(TipoPessoa tipo){
-
-        this.tipo = ((this.tipo == TipoPessoa.FISICA) ?
-                TipoPessoa.JURIDICA : TipoPessoa.FISICA);
-        /*
-        if(tipo == TipoPessoa.FISICA){
-            this.tipo = TipoPessoa.JURIDICA;
-        }else if(tipo == TipoPessoa.JURIDICA){
-            this.tipo = TipoPessoa.FISICA;
-        }
-*/
-    }
+//    public void trocarTipoPessoa(TipoPessoa tipo){
+//
+//        this.tipo = (this.tipo == TipoPessoa.FISICA? TipoPessoa.JURIDICA : TipoPessoa.FISICA);
+//
+////        if(tipo == TipoPessoa.FISICA){
+////            this.tipo = TipoPessoa.JURIDICA;
+////        }else if(tipo == TipoPessoa.JURIDICA){
+////            this.tipo = TipoPessoa.FISICA;
+////        }
+//*/
+//    }
 
     public void inprimirValores(){
         System.out.println("Nome: " + nome);
@@ -37,11 +36,6 @@ System.out.println("Cor de carro" + criarCarro(""));
             }
 
         }
-
-    }
-
-    public int somar (int primeiroN, int segundoN) {
-        return primeiroN + segundoN;
 
     }
 
