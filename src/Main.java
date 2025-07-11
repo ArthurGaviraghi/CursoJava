@@ -1,19 +1,44 @@
-import br.com.poo.entidedes.Animal;
-import br.com.poo.entidedes.Pasciente;
-import br.com.poo.entidedes.Pessoa;
-import br.com.poo.entidedes.calculadora;
+import br.com.poo.entidedes.*;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 import java.util.logging.SimpleFormatter;
 
 public class Main {
 
     public static void main (String[] args) {
-
-        criarCalculadora();
-        imc();
+criarProdutoEstoque();
 
     }
+
+    public static void criarProdutoEstoque(){
+       int qtd;
+
+        ProdutoEstoque produtoEstoque = new ProdutoEstoque();
+        boolean continuar;
+        produtoEstoque.setNome("sucatas");
+        produtoEstoque.adicionarEstoque(50);
+
+            do{
+                try{
+                    System.out.println("Digite qnts produtos quer retirar: ");
+                    int qnt =new Scanner(System.in).nextInt();
+                    produtoEstoque.retirarEstoque(qnt);
+                    System.out.println("Deseja continuar? (S/N)");
+                    continuar  = new Scanner(System.in).next().toUpperCase().charAt(0)=='S';
+
+
+                }catch (Exception e){
+                    System.out.println(e.getMessage());
+                    continuar = true;
+                }
+            }while (continuar);
+
+
+    }
+
+
+
 public static void animal(){
 
 
